@@ -2,6 +2,8 @@ import logo from "./logo.svg";
 import "./App.css";
 import {useAppSelector, useAppDispatch} from "./hooks/hooks";
 import {incremented, amountAdded} from "./redux/features/counterSlice";
+import PostsList from "./posts/PostsList";
+import AddPostForm from "./posts/AddPostForm";
 
 function App() {
   const value = useAppSelector((state) => state.counter.value);
@@ -43,6 +45,8 @@ function App() {
           </a>
         </p>
       </header>
+      <PostsList />
+      <AddPostForm />
     </div>
   );
 }
