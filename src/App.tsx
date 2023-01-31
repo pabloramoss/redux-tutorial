@@ -4,6 +4,7 @@ import {useAppSelector, useAppDispatch} from "./hooks/hooks";
 import {incremented, amountAdded} from "./redux/features/counterSlice";
 import PostsList from "./posts/PostsList";
 import AddPostForm from "./posts/AddPostForm";
+import {Home} from "./components/Home";
 
 function App() {
   const value = useAppSelector((state) => state.counter.value);
@@ -45,6 +46,7 @@ function App() {
           </a>
         </p>
       </header>
+      <Home />
       <PostsList />
       <AddPostForm />
     </div>
