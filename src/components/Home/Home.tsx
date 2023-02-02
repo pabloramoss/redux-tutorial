@@ -1,5 +1,7 @@
 import {useEffect, useState} from "react";
 
+import {getCharacters} from "../../services/api";
+
 const Home: React.FC = () => {
   const [characters, setCharacters] = useState<any>([]);
 
