@@ -7,6 +7,6 @@ export const getCharacters = async () => {
 
     return data.results;
   } catch (error) {
-    console.log("Hubo un error al traerse los datos", error);
+    console.error("Hubo un error al traerse los datos", error);
   }
 };
