@@ -1,8 +1,8 @@
-import {ENDPOINTS} from "../constants/endpoints";
+import {API} from "../constants/endpoints";
 
 export const getCharacters = async () => {
   try {
-    const response = await fetch(ENDPOINTS.characters);
+    const response = await fetch(API.characters);
     const data = await response.json();
 
     return data.results;
