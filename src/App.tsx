@@ -2,6 +2,7 @@ import "./App.css";
 import PostsList from "./posts/PostsList";
 import AddPostForm from "./posts/AddPostForm";
 import {Home} from "./components/Home";
+import {Counter} from "./components/Counter";
 
 function App() {
   return (
@@ -9,6 +10,7 @@ function App() {
       <Home />
       <PostsList />
       <AddPostForm />
+      <Counter />
     </div>
   );
 }
